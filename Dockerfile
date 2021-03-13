@@ -3,7 +3,7 @@ FROM alpine:3.13
 RUN apk add --no-cache \
     postfix
 
-EXPOSE 25
+EXPOSE 25 465
 
 ENTRYPOINT [ "/usr/sbin/postfix" ]
 
