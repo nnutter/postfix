@@ -2,6 +2,7 @@
 
 set -o errexit
 
+postalias /etc/postfix/aliases
 postmap /etc/postfix/sasl_passwd
 
 exec /usr/sbin/postfix "$@"
